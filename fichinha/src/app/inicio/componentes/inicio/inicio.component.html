@@ -1,4 +1,6 @@
 <div class="container">
-  <p>inicio works!</p>
-
+  <div *ngIf="acrobacia.nivel !== 0"></div>
+  <p *ngIf="display">inicio works!</p>
+  <app-text-input [valor]="valorDigitado"></app-text-input>
+  <app-button [btnText]="'Não me click!'" (clicked)="exibir()"/>
 </div>
