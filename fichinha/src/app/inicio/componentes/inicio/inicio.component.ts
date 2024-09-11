@@ -3,8 +3,8 @@ import { acrobacia } from './../../entidades/jogador'
 
 @Component({
   selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.scss']
+  templateUrl: 'inicio.component.html',
+  styleUrls: ['inicio.component.scss']
 })
 export class InicioComponent implements OnInit {
   display: boolean = true;
@@ -20,6 +20,11 @@ export class InicioComponent implements OnInit {
   exibir() {
     alert(this.valorDigitado);
   }
+  qualquercoisa(){
 
+  }
   protected readonly acrobacia = acrobacia;
+}
+function qualquercoisa(){
+
 }

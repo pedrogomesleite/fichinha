@@ -1,3 +1,5 @@
+
+
 export interface Jogador {
   nome: string;
   vida: number;
@@ -32,18 +34,19 @@ export class Pericia {
     this.nivel = nivel;
     this.descricao = descricao;
     this.modificador = atributo.modificador + nivel;
+
   }
 }
 
 let agilidade: Atributo = {
   descricao: "agilidade de mais slk",
-  modificador: 2,
+  modificador: 0,
   nome: "agilidade",
 }
 
 let forca: Atributo = {
   descricao: "tadala na mente",
-  modificador: -5,
+  modificador: 0,
   nome: "força",
 }
 
@@ -54,8 +57,14 @@ export let acrobacia: Pericia = {
   nivel: 1,
   nome: "acrobacia"
 }
-
-
-export interface Condicao {
+export let atletismo: Pericia = {
+  modificador: 0,
+  atributo: forca,
+  descricao: "corre carai",
+  nivel: 1,
+  nome: "atletismo",
 
 }
+
+
+
